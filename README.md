@@ -1,87 +1,36 @@
-# gabrielmamani.github.io
+# Portafolio Personal
 
-One Paragraph of project description goes here
+¡Bienvenido/a a mi portafolio personal! Soy Gabriel Mamani, un desarrollador web apasionado por crear soluciones digitales eficientes y atractivas. Este sitio web es una muestra de mi trabajo, habilidades y proyectos que he desarrollado a lo largo de mi carrera.
 
-## Getting Started
+## 🌐 Sitio en Vivo
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Puedes visitar mi portafolio en: [https://rgmamani.github.io](https://rgmamani.github.io)
 
-### Prerequisites
+## 🛠️ Tecnologías Utilizadas
 
-What things you need to install the software and how to install them
+* **HTML5** y **CSS3** para la estructura y estilos.
+* **JavaScript** para funcionalidades interactivas.
+* **Bootstrap** para un diseño responsivo y moderno.
+* **GitHub Pages** para el despliegue del sitio.
 
-```
-Give examples
-```
+## 📁 Estructura del Proyecto
 
-### Installing
+* `index.html`: Página principal del portafolio.
+* `about.html`: Información sobre mí.
+* `projects.html`: Detalles de proyectos destacados.
+* `contact.html`: Formulario de contacto.
+* `assets/`: Recursos como imágenes, hojas de estilo y scripts.
 
-A step by step series of examples that tell you how to get a development env running
+## 📌 Características Destacadas
 
-Say what the step will be
+* Diseño responsivo que se adapta a diferentes dispositivos.
+* Secciones claras que incluyen información personal, habilidades, proyectos y contacto.
+* Código limpio y organizado para facilitar futuras actualizaciones.
 
-```
-Give the example
-```
+## 🤝 Contribuciones
 
-And repeat
+Este proyecto es personal y actualmente no está abierto a contribuciones externas. Sin embargo, agradezco cualquier sugerencia o comentario que puedas tener.
 
-```
-until finished
-```
+## 📬 Contacto
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+Si deseas ponerte en contacto conmigo, puedes hacerlo a través del formulario en la sección de contacto de mi sitio web o enviarme un correo electrónico a: \[[rgmamani@gmail.com](mailto:rgmamani@egmail.com)]

@@ -11,7 +11,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png" />
   <link rel="manifest" href="/img/site.webmanifest" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <script type="text/javascript">
     (function (c, l, a, r, i, t, y)
@@ -21,18 +22,59 @@
       y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
     })(window, document, "clarity", "script", "r66nw5hwy9");
   </script>
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle fill='%23fff' cx='32' cy='32' r='32'/%3E%3Ctext x='50%' y='54%' text-anchor='middle' font-family='Montserrat,Roboto,sans-serif' font-size='32' font-weight='bold' fill='%232A3F54' dy='.1em'%3EGM%3C/text%3E%3C/svg%3E">
 </head>
 <style>
   /* Professional color palette applied */
   html,
-  body,
+  body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+  }
+
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", "Roboto", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+    margin-top: 0.8em;
+    margin-bottom: 0.4em;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.4em;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3em;
+  }
+
+  p,
+  ul,
+  ol {
+    margin-top: 0.5em;
+    margin-bottom: 1.1em;
   }
 
   body {
@@ -59,12 +101,15 @@
     /* Neutral light grey */
   }
 
-  .w3-container {
-    color: #333333;
-    /* Dark grey for text */
+  .w3-container,
+  .w3-card,
+  .w3-white {
+    padding-top: 28px !important;
+    padding-bottom: 28px !important;
   }
 
   .w3-card {
+    margin-bottom: 32px !important;
     border: 1px solid #B0B0B0;
     /* Subtle grey border */
   }
@@ -97,16 +142,260 @@
     color: #333333 !important;
     /* Dark grey for text */
   }
+
+  /* Hero Section Styles */
+  .hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 340px;
+    background: linear-gradient(120deg, #2A3F54 60%, #4F5D75 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+    overflow: hidden;
+  }
+
+  .hero-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 40, 60, 0.60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-content {
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    padding: 32px 16px 24px 16px;
+  }
+
+  .hero-avatar {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 24px rgba(42, 63, 84, 0.18);
+    background: #fff;
+  }
+
+  .hero-content h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+  }
+
+  .hero-content h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #F9D342;
+    letter-spacing: 0.5px;
+  }
+
+  .hero-tagline {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #e0e0e0;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 600px) {
+    .hero-content h1 {
+      font-size: 1.5rem;
+    }
+
+    .hero-content h3 {
+      font-size: 1rem;
+    }
+
+    .hero-tagline {
+      font-size: 0.95rem;
+    }
+
+    .hero-avatar {
+      width: 80px;
+      height: 80px;
+    }
+
+    .hero-section {
+      min-height: 220px;
+    }
+  }
+
+  /* --- Animations & Hover Effects --- */
+  a,
+  .w3-hover-opacity,
+  .fa {
+    transition: color 0.2s, background 0.2s, box-shadow 0.2s, opacity 0.2s;
+  }
+
+  .fa-linkedin:hover {
+    color: #0A66C2 !important;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(10, 102, 194, 0.12);
+  }
+
+  .fa-github:hover {
+    color: #24292F !important;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(36, 41, 47, 0.12);
+  }
+
+  .fa-twitter:hover {
+    color: #1DA1F2 !important;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(29, 161, 242, 0.12);
+  }
+
+  .w3-card,
+  .w3-container,
+  .w3-white {
+    transition: box-shadow 0.3s, transform 0.3s;
+  }
+
+  .w3-card:hover {
+    box-shadow: 0 8px 32px rgba(42, 63, 84, 0.18), 0 1.5px 6px rgba(0, 0, 0, 0.04);
+    transform: translateY(-4px) scale(1.01);
+  }
+
+  .hero-avatar {
+    transition: box-shadow 0.3s, transform 0.3s;
+  }
+
+  .hero-avatar:hover {
+    box-shadow: 0 8px 32px rgba(42, 63, 84, 0.28);
+    transform: scale(1.07) rotate(-2deg);
+  }
+
+  /* Fade-in effect for sections */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* Modern Card and Section Layouts */
+  .w3-elevated {
+    box-shadow: 0 4px 24px rgba(42, 63, 84, 0.10), 0 1.5px 6px rgba(0, 0, 0, 0.04);
+  }
+
+  .w3-divider {
+    border: none;
+    border-top: 1.5px solid #e0e0e0;
+    margin: 24px 0 24px 0;
+  }
+
+  /* Alternate section backgrounds for visual separation */
+  .alt-section {
+    background: #f7f8fa;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(42, 63, 84, 0.06);
+    padding: 32px 24px;
+    margin-bottom: 32px;
+  }
+
+  /* Header Styles */
+  .site-header {
+    background: #2A3F54;
+    color: #fff;
+    padding: 16px 0;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 0 8px 32px;
+    background: transparent;
+  }
+
+  .logo-monogram {
+    font-family: "Montserrat", "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 2.1rem;
+    color: #2A3F54;
+    background: #fff;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(42, 63, 84, 0.10);
+    border: 2.5px solid #F9D342;
+    letter-spacing: 0.05em;
+  }
+
+  .site-title {
+    font-family: "Montserrat", "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #2A3F54;
+    letter-spacing: 0.08em;
+    text-transform: lowercase;
+  }
+
+  /* Responsive adjustments for header */
+  @media (max-width: 600px) {
+    .site-header {
+      padding-left: 10px;
+    }
+
+    .logo-monogram {
+      width: 36px;
+      height: 36px;
+      font-size: 1.2rem;
+    }
+
+    .site-title {
+      font-size: 1rem;
+    }
+  }
 </style>
 
 <body class="w3-light-grey">
+  <!-- Header Section -->
+  <header class="site-header">
+    <div class="logo-monogram">GM</div>
+    <span class="site-title">gabriel mamani</span>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero-section fade-in">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <img src="img/yo2.jpg" alt="Gabriel Mamani" class="hero-avatar" />
+        <h1>Gabriel Mamani</h1>
+        <h3>.Net Developer & Technical Leader</h3>
+        <p class="hero-tagline">Building robust solutions, leading teams, and driving innovation in the cloud.</p>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section -->
+
   <!-- Page Container -->
-  <div class="w3-content w3-margin-top" style="max-width: 1400px">
+  <div class="w3-content w3-margin-top fade-in" style="max-width: 1400px">
     <!-- The Grid -->
     <div class="w3-row-padding">
       <!-- Left Column -->
       <div class="w3-third">
-        <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-white w3-text-grey w3-card-4 w3-elevated">
           <div class="w3-display-container">
             <img src="img/yo2.jpg" style="width: 100%" alt="Avatar" />
             <div class="w3-display-bottomleft w3-container w3-text-black">
@@ -126,30 +415,30 @@
             <p>
               <i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+54 351 3520974
             </p>
-            <hr />
+            <hr class="w3-divider" />
             <p class="w3-large">
               <b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b>
             </p>
             <p>.Net Framework</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-light-grey w3-round-xlarge w3-small w3-elevated">
               <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width: 90%">
                 90%
               </div>
             </div>
             <p>Azure</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-light-grey w3-round-xlarge w3-small w3-elevated">
               <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width: 80%">
                 <div class="w3-center w3-text-white">80%</div>
               </div>
             </div>
             <p>Agile - Scrum</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-light-grey w3-round-xlarge w3-small w3-elevated">
               <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width: 85%">
                 85%
               </div>
             </div>
             <p>C#</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-light-grey w3-round-xlarge w3-small w3-elevated">
               <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width: 90%">
                 90%
               </div>
@@ -160,11 +449,11 @@
               <b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b>
             </p>
             <p>Spanish</p>
-            <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-light-grey w3-round-xlarge w3-elevated">
               <div class="w3-round-xlarge w3-teal" style="height: 24px; width: 100%"></div>
             </div>
             <p>English</p>
-            <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-light-grey w3-round-xlarge w3-elevated">
               <div class="w3-round-xlarge w3-teal" style="height: 24px; width: 55%"></div>
             </div>
             <br />
@@ -524,7 +813,7 @@
       Powered by
       <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
       <br>
-      <small>Version 1.0.0</small>
+      <small>Version 1.2.0</small>
     </p>
   </footer>
 </body>

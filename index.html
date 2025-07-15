@@ -199,7 +199,7 @@
           </h2>
           <div class="w3-container">
             <p>
-              I am a seasoned software professional with 16 years of experience in system analysis, design, coding,
+              I am a seasoned software professional with <span id="experience-years"></span> years of experience in system analysis, design, coding,
               database administration, and implementation of a wide variety of projects from different industries.
               <br />
               <br />
@@ -531,9 +531,23 @@
       Powered by
       <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
       <br>
-      <small>Version 1.1.0</small>
+      <small>Version 1.1.1</small>
     </p>
   </footer>
+
+  <script>
+    function calculateExperience() {
+      const startDate = new Date(2006, 11, 1); // Diciembre de 2006
+      const currentDate = new Date();
+      let years = currentDate.getFullYear() - startDate.getFullYear();
+      const m = currentDate.getMonth() - startDate.getMonth();
+      if (m < 0 || (m === 0 && currentDate.getDate() < startDate.getDate())) {
+        years--;
+      }
+      document.getElementById('experience-years').textContent = years;
+    }
+    calculateExperience();
+  </script>
 </body>
 
 </html>

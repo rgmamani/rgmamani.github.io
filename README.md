@@ -1,36 +1,42 @@
-# Portafolio Personal
+# Portafolio Personal — Gabriel Mamani
 
-¡Bienvenido/a a mi portafolio personal! Soy Gabriel Mamani, un desarrollador web apasionado por crear soluciones digitales eficientes y atractivas. Este sitio web es una muestra de mi trabajo, habilidades y proyectos que he desarrollado a lo largo de mi carrera.
+Portafolio / CV de una sola página de **Gabriel Mamani**, desarrollador .NET senior y arquitecto de nube (Azure). Sitio estático publicado con GitHub Pages.
 
-## 🌐 Sitio en Vivo
+## 🌐 Sitio en vivo
 
-Puedes visitar mi portafolio en: [https://rgmamani.github.io](https://rgmamani.github.io)
+[https://rgmamani.github.io](https://rgmamani.github.io)
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Tecnologías
 
-* **HTML5** y **CSS3** para la estructura y estilos.
-* **JavaScript** para funcionalidades interactivas.
-* **Bootstrap** para un diseño responsivo y moderno.
-* **GitHub Pages** para el despliegue del sitio.
+* **HTML5** y **CSS3** (autocontenido, sin framework CSS ni paso de build).
+* **JavaScript** vanilla para los años de experiencia calculados en vivo, el reveal al hacer scroll y "Guardar como PDF".
+* **Google Fonts** — Archivo (voz) y Spline Sans Mono (datos).
+* **GitHub Pages** para el despliegue.
+* **Microsoft Clarity** para analítica.
 
-## 📁 Estructura del Proyecto
+## 🎨 Diseño — "Systems Reference"
 
-* `index.html`: Página principal del portafolio.
-* `about.html`: Información sobre mí.
-* `projects.html`: Detalles de proyectos destacados.
-* `contact.html`: Formulario de contacto.
-* `assets/`: Recursos como imágenes, hojas de estilo y scripts.
+El CV está presentado con la gramática de un documento de ingeniería: bloque de título tipo plano técnico, grilla azul con marcas de corte, un único acento *blueprint blue*, la trayectoria como una línea de tiempo de sistema (roles recientes destacados y experiencia 2006–2014 en un bloque colapsable), y skills como una hoja de especificaciones. Las decisiones visuales durables están documentadas en [`DESIGN.md`](DESIGN.md) y la verdad del producto en [`PRODUCT.md`](PRODUCT.md).
 
-## 📌 Características Destacadas
+## 📁 Estructura del proyecto
 
-* Diseño responsivo que se adapta a diferentes dispositivos.
-* Secciones claras que incluyen información personal, habilidades, proyectos y contacto.
-* Código limpio y organizado para facilitar futuras actualizaciones.
+* `index.html` — la página completa (marcado, estilos y scripts autocontenidos).
+* `img/` — retrato (`portrait.jpg`), favicons, `apple-touch-icon`, `site.webmanifest`.
+* `PRODUCT.md` — verdad del producto (a quién sirve, hechos, restricciones).
+* `DESIGN.md` — sistema de diseño y decisiones visuales durables.
+
+## 📌 Características
+
+* Diseño responsive (una sola columna en móvil, sin scroll horizontal).
+* Accesible: landmarks semánticos, un único `h1`, `aria-label` en enlaces con ícono, foco visible, `mailto:`/`tel:`.
+* Rápido y liviano: retrato optimizado (~81 KB), CSS autocontenido, íconos SVG inline.
+* Hoja de estilos de impresión que expande toda la experiencia para "Guardar como PDF".
+* Años de experiencia calculados automáticamente (nunca quedan desactualizados).
 
 ## 🤝 Contribuciones
 
-Este proyecto es personal y actualmente no está abierto a contribuciones externas. Sin embargo, agradezco cualquier sugerencia o comentario que puedas tener.
+Proyecto personal, sin contribuciones externas por ahora. Se agradecen sugerencias.
 
 ## 📬 Contacto
 
-Si deseas ponerte en contacto conmigo, puedes hacerlo a través del formulario en la sección de contacto de mi sitio web o enviarme un correo electrónico a: \[[rgmamani@gmail.com](mailto:rgmamani@egmail.com)]
+A través de los enlaces del sitio o por correo: [rgmamani@gmail.com](mailto:rgmamani@gmail.com)

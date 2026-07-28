@@ -1,0 +1,16 @@
+# Impeccable tooling artifacts (design audit snapshots, config) — not part of the site
+.impeccable/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Node (in case tooling is ever added)
+node_modules/
